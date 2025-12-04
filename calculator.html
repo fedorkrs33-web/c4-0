@@ -156,6 +156,7 @@
             } else {
                 currentInput += number;
             }
+            console.log('Ввод числа (кнопка):', number, 'Текущее выражение:', currentInput);
             updateDisplay();
         }
 
@@ -240,6 +241,7 @@
             const key = event.key;
             
             if (key >= '0' && key <= '9') {
+                console.log('Ввод числа (клавиатура):', key);
                 appendNumber(key);
             } else if (key === '.') {
                 appendDecimal();
